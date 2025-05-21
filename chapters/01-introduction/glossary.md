@@ -1,18 +1,18 @@
 # Glossary of Terms & Acronyms - Chapter 01
 
-**Prompt engineering**: the discipline of designing, refining, and optimizing the inputs (prompts) provided to large language models (LLMs) to achieve desired, accurate, and contextually relevant outputs.
-**LLMs (Large Language Models)**: powerful, but their effectiveness is highly dependent on the quality of the input they receive.
-**Clarity and Specificity**: Prompts should be unambiguous, detailing exactly what is expected from the model.
-**Context Provision**: Supplying relevant background information helps the model generate more informed and accurate responses.
-**Role Assignment**: Defining a persona for the LLM (e.g., "You are an expert historian") can significantly influence the style and content of its output.
-**Constraint Definition**: Specifying limitations on length, format, or content helps narrow down the model's output space.
-**Iterative Refinement**: Prompt engineering is an iterative process. Initial prompts are rarely perfect and require continuous testing and adjustment.
-**Few-Shot Learning**: For complex tasks, include a few input-output examples to demonstrate the desired pattern.
-**Delimiters**: Employ clear separators (e.g., triple quotes, XML tags) to distinguish instructions from context or examples.
-**NLP (Natural Language Processing)**: has undergone a significant transformation, evolving from rudimentary rule-based systems to sophisticated large language models (LLMs).
-**Rule-Based and Symbolic Systems**: NLP systems relied on handcrafted rules, lexicons, and grammatical structures.
-**Statistical NLP**: Shifted to machine learning models trained on large text corpora.
-**Deep Learning and Neural Networks**: Introduction of neural sequence models like Recurrent Neural Networks (RNNs) and Long Short-Term Memory (LSTMs).
-**Transformer Architecture**: (e.g., BERT, GPT) revolutionized NLP. Its self-attention mechanism allowed for parallel processing of sequences and superior capture of long-range dependencies.
-**Instruction tuning**: where models were trained to follow instructions.
-**ETL (Extract, Transform, Load)**: Data Extraction and Transformation.
+**Prompt Engineering**: The specialized discipline of designing, refining, and optimizing the textual inputs (prompts) provided to Large Language Models (LLMs) to achieve precise, desired, and contextually relevant outputs. It is both an art and a science.
+**LLM (Large Language Model)**: A type of artificial intelligence model, typically based on the Transformer architecture, trained on vast amounts of text data to understand, generate, and interact with human language.
+**Clarity and Specificity (Principle)**: A core principle of prompt engineering emphasizing that prompts should be unambiguous, precise, and explicitly detail the expected task and output from the LLM.
+**Context Provision (Principle)**: The practice of supplying relevant background information or examples within a prompt to help the LLM generate more informed, accurate, and coherent responses.
+**Role Assignment (Principle)**: A technique in prompt engineering where a specific persona or role (e.g., "expert historian," "marketing copywriter") is assigned to the LLM to influence its tone, style, and knowledge application.
+**Constraint Definition (Principle)**: The act of specifying limitations or rules within a prompt regarding the desired output's length, format, content, or style, thereby narrowing the LLM's generation space.
+**Iterative Refinement (Process)**: The continuous cycle of drafting, testing, evaluating, and modifying prompts based on observed LLM outputs to progressively improve performance and achieve desired results.
+**Few-Shot Learning**: An emergent capability of LLMs where the model can learn to perform a new task with only a few input-output examples provided in the prompt, without requiring explicit fine-tuning.
+**Delimiters**: Special characters or tags (e.g., triple quotes `"""`, XML tags `<tag>`) used within a prompt to clearly separate instructions from input content, examples, or other distinct sections, improving parsing and reducing ambiguity.
+**NLP (Natural Language Processing)**: A field of artificial intelligence focused on enabling computers to understand, interpret, and generate human language in a valuable way.
+**Rule-Based and Symbolic Systems**: Early NLP approaches that relied on handcrafted linguistic rules, lexicons, and predefined patterns to process and generate language. These systems were often brittle and lacked generalization.
+**Statistical NLP**: An approach to NLP that uses machine learning models trained on large text corpora to identify statistical patterns in language, reducing the need for explicit rules but often requiring extensive feature engineering.
+**Deep Learning and Neural Networks**: A subfield of machine learning that utilizes multi-layered neural networks (e.g., RNNs, LSTMs) to learn complex patterns from data, leading to significant advancements in NLP by capturing more intricate linguistic structures.
+**Transformer Architecture**: A neural network architecture introduced in 2017, characterized by its self-attention mechanism, which revolutionized NLP by enabling efficient parallel processing of sequences and superior capture of long-range dependencies. It is the foundation of most modern LLMs (e.g., BERT, GPT).
+**Instruction Tuning**: A training methodology where LLMs are fine-tuned on datasets of natural language instructions paired with desired outputs, enhancing their ability to follow explicit commands and generalize to new tasks.
+**ETL (Extract, Transform, Load)**: A data integration process that involves extracting data from source systems, transforming it into a desired format, and loading it into a target system (e.g., a database or data warehouse). In prompt engineering, LLMs can assist with the "Extract" and "Transform" phases from unstructured text.
