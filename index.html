@@ -16,23 +16,18 @@
       loadSidebar: true,
       subMaxLevel: 3, // Adjust as needed, 2 or 3 is usually good
       search: 'auto', // Enables the search plugin
-      coverpage: true, // Add this line
-      plugins: [
-        function(hook, vm) {
-          hook.beforeEach(function(html) {
-            // Replace 'chapters/' with '' in links to make them work correctly
-            // This is because Docsify serves from the root, and we want clean URLs
-            var url = vm.route.file;
-            if (url) {
-              var newPath = url.startsWith('chapters/') ? url.replace('chapters/', '') : url;
-              if (newPath !== url) {
-                vm.route.file = newPath;
-              }
-            }
-            return html;
-          });
+      coverpage: true, 
+      resolvePath: function(path) {
+        // If the path is the root README.md, a special Docsify file (starts with '_'),
+        // or an external link, don't modify it.
+        if (path === 'README.md' || path === '/' || path.startsWith('_') || path.startsWith('http')) {
+          return path;
         }
-      ]
+        // For all other paths, assume they are chapter files and prepend 'chapters/'
+        // This ensures that links like '01-introduction/file.md' correctly map to
+        // 'chapters/01-introduction/file.md'.
+        return 'chapters/' + path;
+      }
     };
   </script>
   <!-- Docsify v4 -->
