@@ -14,25 +14,20 @@
     window.$docsify = {
       name: 'Prompt Engineering Ebook', // Or use the existing title if appropriate
       repo: 'https://github.com/stancsz/prompt-engineering', // Replace with the actual repo URL
-      basePath: 'chapters/', // Prefix all page paths to the chapters directory
+      basePath: 'prompt-engineering-ebook/', // Prefix all page paths to the correct directory
       loadSidebar: true,
       subMaxLevel: 3, // Adjust as needed, 2 or 3 is usually good
       search: 'auto', // Enables the search plugin
       coverpage: true, 
       resolvePath: function(path) {
-        // If already in chapters/, leave unchanged
-        if (path.startsWith('prompt-engineering-ebook/')) {
-          return path;
-        }
         // If the path is the root README.md, a special Docsify file (starts with '_'),
         // or an external link, don't modify it.
         if (path === 'README.md' || path === '/' || path.startsWith('_') || path.startsWith('http')) {
           return path;
         }
-        // For all other paths, assume they are chapter files and prepend 'chapters/'
-        // This ensures that links like '01-introduction/file.md' correctly map to
-        // 'chapters/01-introduction/file.md'.
-        return 'chapters/' + path.replace(/^\/+/, '');
+        // Remove 'chapters/' from the path
+        const newPath = path.replace(/^chapters\//, '');
+        return newPath;
       }
     };
   </script>
