@@ -27,7 +27,7 @@
   * [Chaining & Orchestration](05-advanced-prompt-techniques/5.1-prompt-chaining-orchestration-and-pipelines.md)
   * [Retrieval Augmented Generation](05-advanced-prompt-techniques/5.2-retrieval-augmented-generation-and-memory.md)
   * [Programmatic Generation & APIs](05-advanced-prompt-techniques/5.3-programmatic-prompt-generation-and-apis.md)
-  * [Prefix Tuning & Adapters](chapters/05-advanced-prompt-techniques/5.4-prefix-tuning-adapters-and-soft-prompts.md)
+  * [Prefix Tuning & Adapters](05-advanced-prompt-techniques/5.4-prefix-tuning-adapters-and-soft-prompts.md)
   * [Debugging & Failure Analysis](05-advanced-prompt-techniques/5.5-debugging-and-prompt-failure-analysis.md)
   * [Glossary](05-advanced-prompt-techniques/glossary.md)
 * Evaluation and Iteration
