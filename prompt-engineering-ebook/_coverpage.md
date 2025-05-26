@@ -4,4 +4,4 @@
 
 <h1 align="center">Prompt Engineering Ebook</h1>
 <p align="center">Your Hands-On Guide to Mastering Prompts</p>
-<p align="center">Welcome! This ebook offers foundational concepts and practical exercises for Prompt Engineering. My belief: the best way to learn is by doing. We'll explore ideas, provide context, and apply them immediately. Let's master prompts together!</p>
+<p align="center">Welcome! This ebook is designed to help you get started with Prompt Engineering. We'll cover foundational concepts and, more importantly, dive into practical exercises. I've always found that the best way to learn is by doing, so let's explore ideas, build context, and apply them together. Ready to craft some effective prompts?</p>
