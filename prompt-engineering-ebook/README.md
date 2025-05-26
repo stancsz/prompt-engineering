@@ -1,10 +1,5 @@
 # Welcome to the Prompt Engineering Ebook!
 
-Curious about getting the most out of AI models? This ebook is your practical guide to Prompt Engineering.
-
-My approach is simple: "learning by doing." We'll skip the dry theory and jump straight into core concepts, real-world context, and plenty of hands-on exercises. You'll quickly build a solid understanding of how prompts work and how to craft them effectively.
-
-Whether you're just starting out or looking to refine your skills, I hope you'll find actionable insights here. We'll explore everything from the basics of language models to advanced techniques for designing, evaluating, and even debugging your prompts.
 
 Inside, we'll cover:
 
