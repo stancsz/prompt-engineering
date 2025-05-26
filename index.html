@@ -18,17 +18,9 @@
       loadSidebar: true,
       subMaxLevel: 3, // Adjust as needed, 2 or 3 is usually good
       search: 'auto', // Enables the search plugin
-      coverpage: true, 
-      resolvePath: function(path) {
-        // If the path is the root README.md or an external link, don't modify it.
-        if (path === 'README.md' || path === '/' || path.startsWith('http')) {
-          return path;
-        }
-        // Docsify automatically handles _sidebar.md and _coverpage.md relative to basePath.
-        // No special handling needed here for them.
-        // Remove 'chapters/' from the path
-        const newPath = path.replace(/^chapters\//, '');
-        return newPath;
+      coverpage: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
       }
     };
   </script>
