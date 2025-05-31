@@ -1,0 +1,30 @@
+# Glossary of Terms & Acronyms - Chapter 02
+
+**Transformer**: A neural network architecture introduced in 2017 that revolutionized NLP by replacing recurrent and convolutional layers with attention mechanisms, enabling parallel processing of sequences and efficient capture of long-range dependencies. It forms the foundation of most modern LLMs.
+**Encoder (Transformer)**: A component of the Transformer architecture responsible for processing the input sequence and creating a rich contextual representation of the text.
+**Decoder (Transformer)**: A component of the Transformer architecture responsible for generating the output sequence, typically based on the encoder's output and previously generated tokens.
+**GPT (Generative Pre-trained Transformer) - Decoder-Only Model**: A class of Large Language Models consisting solely of a Transformer decoder stack, designed for autoregressive text generation (predicting the next token in a sequence).
+**Autoregressive**: A property of models that generate sequences one token at a time, where each new token is predicted based on all preceding tokens in the sequence.
+**BERT (Bidirectional Encoder Representations from Transformers) - Encoder-Only Model**: A class of Large Language Models consisting solely of a Transformer encoder stack, designed to build a deep, bidirectional understanding of context within an input text.
+**T5 / Seq2Seq (Encoder-Decoder Model)**: A class of Large Language Models that utilize both a Transformer encoder and a decoder, framing all NLP tasks as a "text-to-text" problem where both input and output are text sequences.
+**Pretraining**: The initial stage of LLM training where the model learns general language understanding, generation, and world knowledge from vast amounts of unlabeled text data using self-supervised objectives.
+**Fine-Tuning**: The process of adapting a pretrained LLM's general knowledge to a specific downstream task or domain by continuing its training on a smaller, labeled, task-specific dataset.
+**Instruction Tuning**: A post-pretraining stage that teaches an LLM to reliably follow human instructions and align its outputs with human preferences, making it more useful and conversational for diverse tasks.
+**RLHF (Reinforcement Learning from Human Feedback)**: An advanced technique used after instruction tuning to further optimize an LLM's behavior by leveraging human evaluations (rankings) of model outputs to refine its responses through reinforcement learning.
+**MLM (Masked Language Modeling)**: A pretraining objective, typically for encoder-only models like BERT, where the model learns to predict randomly masked words in a sentence based on their surrounding bidirectional context.
+**CLM (Causal Language Modeling)**: A pretraining objective, typically for decoder-only models like GPT, where the model learns to predict the next word in a sequence given all preceding words (unidirectional context).
+**Tokenization**: The process of converting raw text into smaller, discrete numerical units called tokens, which are the fundamental building blocks that LLMs operate on.
+**Token**: A fundamental numerical unit of text (e.g., a word, subword, character, or punctuation mark) that an LLM processes.
+**Byte-Pair Encoding (BPE)**: A subword tokenization method that iteratively merges the most frequent pairs of characters or subwords in a text corpus to build a vocabulary.
+**WordPiece**: A subword tokenization method, similar to BPE, used by models like BERT, which merges subwords based on their likelihood of forming a new word.
+**SentencePiece**: A language-agnostic subword tokenization method, used by models like T5, that can be trained directly from raw text and handles multiple languages and special characters robustly.
+**Context Window (or Context Length/Sequence Length)**: The maximum number of tokens (including both input prompt and generated output) that an LLM can process and consider at any given time during a single inference call.
+**Embedding**: A dense numerical vector representation of a token, word, phrase, or document, where the position and proximity of vectors in a high-dimensional space encode semantic meaning and relationships.
+**Semantic Similarity**: A measure (often calculated using cosine similarity between embedding vectors) that quantifies how semantically related or similar two pieces of text are.
+**Contextual Embeddings**: Embeddings where the numerical representation of a word changes based on its surrounding words in a sentence, allowing the model to capture the specific meaning of a word in its given context.
+**RAG (Retrieval Augmented Generation)**: A technique that enhances LLM responses by dynamically retrieving relevant information from an external knowledge base (often using embeddings for semantic search) and injecting it into the prompt, thereby augmenting the model's context.
+**Vector Space**: A high-dimensional mathematical space where each token, word, phrase, or document is represented as a unique point (a vector), and the geometric relationships between these points capture their semantic relationships.
+**Attention Mechanism**: A core component in Transformer-based LLMs that allows the model to dynamically weigh the importance of different parts of the input sequence when processing each token, enabling it to focus on relevant information regardless of its position.
+**Self-Attention**: The specific attention mechanism within the Transformer architecture where each token in an input sequence computes attention scores with every other token in that same sequence, allowing the model to understand internal relationships.
+**Scaled Dot-Product Attention**: An efficient mathematical method used to compute attention scores, involving dot products between query, key, and value vectors, followed by scaling and a softmax function to derive weights.
+**Multi-Head Attention**: An extension of the attention mechanism where multiple "attention heads" operate in parallel, each learning to focus on different types of relationships within the input, providing a richer and more nuanced contextual understanding.
